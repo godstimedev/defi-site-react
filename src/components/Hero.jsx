@@ -3,7 +3,7 @@ import Herovid from "../assets/video.mp4";
 
 function Hero() {
   return (
-    <div className="w-full h-[90vh] top-[96px]">
+    <div className="w-full h-[90vh] top-[96px]" id="platform">
       <video
         className="object-cover h-full w-full absolute z-[-1]"
         src={Herovid}

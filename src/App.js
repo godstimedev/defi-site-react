@@ -1,5 +1,5 @@
 import React from "react";
-// import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter } from "react-router-dom";
 
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
@@ -10,18 +10,20 @@ import Footer from "./components/Footer";
 
 function App() {
   return (
-    <div>
-      <Navbar />
-      <Hero />
-      {/* <Routes>
+    <BrowserRouter>
+      <div>
+        <Navbar />
+        <Hero />
+        {/* <Routes>
           <Route path="/" element={<Hero />} />
           <Route path="/about" element={<About />} />
         </Routes> */}
-      <About />
-      <Developers />
-      <Subscribe />
-      <Footer />
-    </div>
+        <About />
+        <Developers />
+        <Subscribe />
+        <Footer />
+      </div>
+    </BrowserRouter>
   );
 }
 

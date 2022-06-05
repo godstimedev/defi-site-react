@@ -3,7 +3,7 @@ import Terminal from "../assets/terminal.png";
 
 function Developers() {
   return (
-    <div className="w-full text-white bg-black">
+    <div className="w-full text-white bg-black" id="developers">
       <div className="max-w-[1240px] px-4 py-16 lg:grid lg:grid-cols-4 items-center">
         <div className="col-span-3">
           <h1>Superpowers for DEFI developers</h1>

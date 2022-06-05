@@ -5,7 +5,7 @@ import { VscServerProcess } from "react-icons/vsc";
 
 function About() {
   return (
-    <div className="w-full bg-black text-white text-center">
+    <div className="w-full bg-black text-white text-center" id="about">
       <div className="max-w-[1240px] mx-auto px-4 py-16  ">
         <h1 className="py-4">A Growing Protocol Ecosystem</h1>
         <p className="py-4 text-xl ">

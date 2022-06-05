@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
-// import { NavLink } from "react-router-dom";
+import { HashLink as Link } from "react-router-hash-link";
 
 function Navbar() {
   const [nav, setNav] = useState(false);
@@ -11,14 +11,31 @@ function Navbar() {
   return (
     <div className="w-full h-[96px] bg-black">
       <div className="max-w-[1240px] mx-auto px-4 flex justify-between items-center h-full">
-        <h1 className="text-[#00d8ff]">DEFI.</h1>
+        <h1 className="text-[#00d8ff]">
+          <Link to="/">DEFI.</Link>
+        </h1>
         <div className="hidden md:flex">
           <ul className="flex items-center text-white ">
-            {/* <NavLink to="/">Home</NavLink> */}
-            <li>Platform</li>
-            <li>Developers</li>
-            <li>Community</li>
-            <li>About</li>
+            <li>
+              <Link to="#platform" smooth>
+                Platform
+              </Link>
+            </li>
+            <li>
+              <Link to="#developers" smooth>
+                Developers
+              </Link>
+            </li>
+            <li>
+              <Link to="#community" smooth>
+                Community
+              </Link>
+            </li>
+            <li>
+              <Link to="#about" smooth>
+                About
+              </Link>
+            </li>
             <button className="ml-4">Use Defi</button>
           </ul>
         </div>
@@ -37,10 +54,26 @@ function Navbar() {
           }
         >
           <ul>
-            <li className="text-xl">Platform</li>
-            <li className="text-xl">Developers</li>
-            <li className="text-xl">Community</li>
-            <li className="text-xl">About</li>
+            <li className="text-xl">
+              <Link to="#platform" smooth>
+                Platform
+              </Link>
+            </li>
+            <li className="text-xl">
+              <Link to="#developers" smooth>
+                Developers
+              </Link>
+            </li>
+            <li className="text-xl">
+              <Link to="#community" smooth>
+                Community
+              </Link>
+            </li>
+            <li className="text-xl">
+              <Link to="#about" smooth>
+                About
+              </Link>
+            </li>
             <button className="m-8">Use Defi</button>
           </ul>
         </div>
